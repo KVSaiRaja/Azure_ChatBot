@@ -1,4 +1,4 @@
-# _Chatter_ - Chatbot for Aditya University Website
+# Chatbot Support for Website
 *azure-chatbot*
 | &nbsp; | &nbsp; |
 | --- | ----------- |
@@ -20,108 +20,93 @@
 
 ## Steps to deploy chatbot using Azure bot service and Language Service:
 
-**Step 1:** Go to Language Studio and click on **create a new Language resource in the Azure portal**
-![Screenshot (98)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/8094c41c-5d39-4f9f-8989-9019b43a8823)
+**Step 1:** Go to azure portal login page and looks like this **Home page of the Azure portal** then click on **Create Resource**
+![Screenshot (98)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/ec8a710d-ca2e-4f57-a17c-5f8fd511b631)
+**Step 2:** Here click on **Ai + Machine Learning** and then create the **Language Resource** for language support 
+![Screenshot (99)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/a5bcb53e-cd68-4e9b-8628-0b179ba16c71)
+**Step 3:** The page looks like this here we are using the Azure AI search click on **Custom Question Answering** for basic QnA service
+![Screenshot (100)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/b8124065-f330-48ca-bc96-a7d19d4b3058)
 
-**Step 2:** Create Language and click **Create**
-![2  Create Language](https://user-images.githubusercontent.com/102405945/209784304-7fdee977-9a4c-4217-9767-5bd7ee12ea00.png)
-![3  ](https://user-images.githubusercontent.com/102405945/209784341-70de1ae6-957a-4c2b-9e09-b0e1ef9048cb.png)
+**Step 4:** In this page fill the basic details like resource name, proper region, proper unique name for language, the pricing tier and finally click on **Review + Create**
+![Screenshot (7)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/91a9f834-9dbc-407f-919e-e67b0ed6e906)
+![Screenshot (8)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/71e3d2ae-56e3-40b8-97ce-07fb72cb89dc)
 
-**Step 3:** Go back to Language Studio and select existing resource (**Myinstance-001**)
-![4  Go back to Language Studio and choose existing resource (Myinstance-001)](https://user-images.githubusercontent.com/102405945/209784154-bb5a224a-908d-44e4-90ca-db7a0b105323.png)
+**Step 5:** After creating language resource the page looks like this then click on Language type resource (**Chat-botpro**)
+![Screenshot (9)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/f66e9e02-ddf5-4359-a0a7-bcf0c0e70051)
+**Step 6:** After opening the Chat-botpro overview in the down side click on **Language Studio** it will redirect to the language studio web service provided by azure platform
+![Screenshot (11)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/003c34b0-79a7-41ff-ba92-8434bff03ad1)
 
-**Step 4:** Create a new Project by clicking **Create new**
-![5  Create a new Project by clicking 'Create new'](https://user-images.githubusercontent.com/102405945/209784192-ea8aaccd-0579-4b60-9549-5fb345935939.png)
+**Step 7:** Here we have to login with our **Azure account** and then select the language resource for creating the project
+![Screenshot (12)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/2b2c6b6a-a727-465d-bd83-cad56ee1f6d4)
+**Step 8:** Click on **Create new** and again click on **Custom Question Answering** then select **I want to select the language when I create a project in this resource** after that select the language for the project
+![Screenshot (13)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/c78531b4-be70-4628-8748-27c67494053a)
+![Screenshot (14)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/a45777ec-716d-4939-814f-32f813fbc213)
+![Screenshot (15)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/31a45f27-fc6d-42b4-8462-701a7ee476cf)
+**Step 9:** Here create a unque name for the project and write the answer for wrong data as **No answer found,Contact the administrator** as for your understanding purpose and after that click on **Add source** to add data like URL's, Files and Chitchat
+![Screenshot (16)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/1a7b78bb-799b-4ce5-ba1c-4263aaa70ed6)
+![Screenshot (17)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/cdd18bb3-7875-4c0b-b2c8-effe73ac05be)
+The data looks like this 
+![Screenshot (101)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/9373f2ec-b6bf-4e27-927b-cb67219bc699)
+**Step 10:** Click **Deploy** and then click **Create Bot**. Further, you can create the bot using azure bot service
+![Screenshot (18)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/aad835b4-6655-48e0-bfb1-0fbf2cf514a1)
 
-**Step 5:** Click **Custom question answering**
-![6  Click 'Custom question answering'](https://user-images.githubusercontent.com/102405945/209784373-f4ed7e0b-b0a3-43a6-a616-7cb9874795e0.png)
+**Step 11:** After that the page looks like this the fill the all required details like unique name and pricing tier and click **Next**
+![Screenshot (19)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/0e73c7d9-eb7c-41a7-9b3c-90450131b24b)
+**Step 12:** In this page we have to enter the **Keys and endpoint** from Language resource in **Azure Bot service** and click **Next**
+![Screenshot (10)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/93702939-5ba8-42ca-b9ef-7210f4c78d15)
+![Screenshot (20)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/4420974e-fd9d-4684-90f8-3450afa365f8)
+**Step 13:** Click **Create** to create the bot service after that click on **Go to resource**
+![Screenshot (21)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/dc758cc6-f0b4-4b67-83ae-e6a3047ac8a7)
+![Screenshot (22)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/3cf16854-2421-48ae-9d4f-e8dfecad2733)
 
-**Step 6:** Click **Create new project** and then select **I want to select the language when I create a project in this resource**
-![7  Click 'Create new project' and then select 'I want to select the language when I create project in this resource'](https://user-images.githubusercontent.com/102405945/209799126-8fbacbe3-c3ff-4fb2-8325-a5a567b7b06a.png)
+**Step 13:** After that the page looks like this then click on **Azure Bot** type name as **Chat-botpro-bot** to open the bot overview page
+![Screenshot (23)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/5a549225-2b6a-4e00-99b5-911c4e762cbd)
 
-**Step 7:** Click **Create project**
-![8  Click 'Create project'](https://user-images.githubusercontent.com/102405945/209784549-cc3168a1-4130-41e1-8d65-7a0e6f5cd0da.png)
+**Step 14:** After that the page looks like this the overview of **Azure Bot service**
+![Screenshot (24)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/0610e0e5-d5f4-42c0-a074-851185761187)
 
-**Step 8:** Click **Add source** and then click **Files**. Further, you can add chitchat such as professional, friendly, witty, caring, enthusiastic by clicking **Chitchat** option
-![9  Click 'Add source' and then click 'Files'](https://user-images.githubusercontent.com/102405945/209799292-57e50e9c-45d1-4107-8e38-71f00ac44f93.png)
+**Step 15:** Here we can see the **Channels** like Web Chat, Microsoft Teams, Telegram, skype, etc.
+![gfhg](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/3c04638f-43ef-438d-92b0-324083610bd2)
 
-**Step 9:** Add file and click **Add all**.
-![10  Add file and click 'Add all'](https://user-images.githubusercontent.com/102405945/209799360-14d5c83c-673a-4418-87a0-fb9c9db60144.png)
-![11  ](https://user-images.githubusercontent.com/102405945/209799394-b0c7468f-8744-4d2e-937b-8e22ebf5a3d1.png)
+**Step 13:** Click **Test in Web Chat** to test the chatbot
+![Screenshot (25)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/f7a1cf37-c005-499b-b405-9762b5384a97)
 
-**Step 10:** Click **Add question pair** to add more question pairs
-![12  Click 'Add question pair' to add more question pairs](https://user-images.githubusercontent.com/102405945/209799864-0e0999be-eed1-4801-b2c7-f59e7ad38631.png)
+**Step 14:** Click on **Web chat** there we can see the **Secret keys and embedded code** where these are used in the website development
+![Screenshot (26)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/56fd9279-5c58-4a83-a2e9-4107d511ef16)
 
-**Step 11:** Add question pairs
-![13  Add question pairs](https://user-images.githubusercontent.com/102405945/209799931-04f19de9-ce11-4ea3-bcf3-34c3918ebc06.png)
+**Step 15:** Click on **Static Web Apps** to create the website url for our chatbot
+![Screenshot (104)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/2cfde885-fcc1-407f-b83e-106f6c459ebd)
+**Step 16:** Here we have to link our Git hub account to Azure Static Web App services to use the website codes
+![Screenshot (27)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/74a2d562-3b5a-4c52-b357-78622659b3be)
+![Screenshot (28)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/fb3cd1b4-7ce5-46a0-a71b-bada7326cb41)
 
-**Step 12:** Click **Save changes**
-![14  Click 'Save changes'](https://user-images.githubusercontent.com/102405945/209800000-7699b683-8c62-4842-8ee6-f10610bfe476.png)
+**Step 17:** Here fill all required details and select **GitHub** as the deployment source and then select the account
+![Screenshot (29)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/4ad64d3a-5603-4d11-a874-9e700dd028f6)
 
-**Step 13:** Click **Test** to test the chatbot
-![15  Click 'Test' to test the chatbot](https://user-images.githubusercontent.com/102405945/209800045-21d44bc1-2c62-41f4-98b7-3dd07d4e3d1a.png)
 
-**Step 14:** Click **Deploy knowledge base** from the side navbar
-![16  Click 'Deploy knowledge base' from the side navbar](https://user-images.githubusercontent.com/102405945/209800213-7010f6ce-6934-4f7f-9499-7f7e1645d3bd.png)
+**Step 18:** Here we have to select the organization name, repository name and branch name where we are uploaded our chatbot website code and then click **Review + create**
+![Screenshot (30)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/718f10c7-5978-4f3f-b6f7-6078693733bb)
 
-**Step 15:** Click **Deploy** to deploy the chatbot
-![17  Click 'Deploy' to deploy the chatbot](https://user-images.githubusercontent.com/102405945/209800264-48fe4642-ceb7-4d56-ad69-b5b0c4dca642.png)
-![18  ](https://user-images.githubusercontent.com/102405945/209800289-eb0be3cc-1005-4333-9fa6-9c1bc088be8c.png)
+**Step 19:** Click **create** and check details of our github account repository and then click **Go to resource**
+![Screenshot (31)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/a0be853f-5e08-44bf-8e09-761a791a3d10)
+![Screenshot (32)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/fe184b96-5527-4481-9929-6833616117d6)
 
-**Step 16:** Click **Create a bot** and it will direct us to Azure Portal
-![19  Click 'Create a bot' and it will direct us to Azure Portal](https://user-images.githubusercontent.com/102405945/209800365-28a1d734-5d05-4e25-9dce-3b5ccdccaa3f.png)
+**Step 20:** After that finally we can see the website **URL** and **Status** to open our working deployed website. Copy the URL. This URL is the URL of our website that is hosted using Azure Static Web Apps sevice
+![Screenshot (33)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/a2a65e36-9eb9-48e3-90ee-85f623f5bdba)
 
-**Step 17:** Fill project details
-![20  Fill Project details](https://user-images.githubusercontent.com/102405945/209800407-69e24820-f18b-48df-b5ee-16979df353d1.png)
+**Step 21:** In github repository, click on **Action**. GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline.
+![Screenshot (103)](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/49be7ecc-f0b7-4336-aa05-c038f07d19b5)
 
-**Step 18:** Click **Review + create**
-![21  Click 'Review + create'](https://user-images.githubusercontent.com/102405945/209800467-b4852fb5-8405-49ae-8f88-194f80a4523f.png)
+**Step 22:** And finally here is the output of our project 
+![https](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/452c29f2-0e6c-4e0e-a971-16ae7bb567fd)
+![Untitled design](https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/bba898cd-610f-48cb-9b6a-70f24ec903a5)
 
-**Step 19:** Click **Create**
-![22  Click 'Create'](https://user-images.githubusercontent.com/102405945/209800515-6bda6eef-3c98-40b6-b284-2350846349cd.png)
-
-**Step 20:** To deploy the chatbot in the website, go to the resource group (RG-001), then click **Myinstance-001-bot** of type Azure bot
-![23  To deploy the chatbot in the website, go to resourse group (RG-001), then click 'Myinstance-001-bot' of type Azure bot](https://user-images.githubusercontent.com/102405945/209800655-ce7cec30-04d0-49ee-aefa-a6bf1f0cacad.png)
-![24  ](https://user-images.githubusercontent.com/102405945/209800732-089b3721-796c-4a54-a361-8d17f2707176.png)
-
-**Step 21:** Click **Channels** from right pane
-![25  Click 'Channels' from the right pane](https://user-images.githubusercontent.com/102405945/209800826-f23a2018-fd8c-403d-a702-d66b8e09ec16.png)
-
-**Step 22:** Click **Web Chat**
-![26  Click 'Web Chat'](https://user-images.githubusercontent.com/102405945/209800954-77b2a9b9-bc45-4ffe-a485-89e3fa39d6d8.png)
-
-**Step 23:** 27. To embed the Web Chat control in a web page, embed the code and secret keys
-![27  To embed the Web Chat control in a web page, embed the code and secret keys](https://user-images.githubusercontent.com/102405945/209801058-493832eb-a99b-44b0-a045-7d412477ead9.png)
-<br><br><br>
-
-## Steps to host the website using Azure Static Web Apps service:
-**Step 1:** To host the website, select **Static Web Apps** service from Azure portal
-![a  To host the website, select 'Static Web Apps' service from Azure portal](https://user-images.githubusercontent.com/102405945/209801494-92990719-36ed-4e16-8b11-e402f1a88b8a.png)
-
-**Step 2:** Click on **Create**
-![b  Click on 'Create'](https://user-images.githubusercontent.com/102405945/209801504-10dc38db-7c01-43e7-8526-6a13c4074163.png)
-
-**Step 3:** Click **Review + create** after filling the required fields
-![c  Click 'Review + create' after filling the required fields](https://user-images.githubusercontent.com/102405945/209801587-7629f811-8258-4b20-b3cd-54d612e00de2.png)
-![d  ](https://user-images.githubusercontent.com/102405945/209801614-5ee2324a-7b02-4189-8cf6-f9f1c6c2b6d0.png)
-
-**Step 4:** Click **Create** to create Static Web App
-![e  Click 'Create' to create Static Web App](https://user-images.githubusercontent.com/102405945/209801684-b96dfce3-16bb-4aca-bce8-4d35c915495d.png)
-
-**Step 5:** In the home page of Azure Portal, click **webapp-001**
-![f  In the home page of Azure Portal, Click 'webapp-001'](https://user-images.githubusercontent.com/102405945/209801757-5648f35e-aa27-4559-814e-59cee9612f04.png)
-
-**Step 6:** Copy the URL. This URL is the URL of our website that is hosted using Azure Static Web Apps sevice
-![g  Copy the URL This URL is the URL of our website that is hosted using Azure Static Web Apps sevice](https://user-images.githubusercontent.com/102405945/209801846-7d42ddea-bf82-4f4c-a49d-4b9354f0b897.png)
-
-**Step 7:** In github repository, click on **Action**. GitHub Actions is a continuous integration and continuous delivery (CI/CD) platform that allows you to automate your build, test, and deployment pipeline.
-![github](https://user-images.githubusercontent.com/102405945/209802086-118581d3-27f6-418a-a16c-89728fa30551.png)
-<br><br><br>
 
 ### Demo Video of Project
 
 
-https://user-images.githubusercontent.com/102405945/209807183-959bb59a-2789-4cff-99cc-6a8a52a2ad71.mp4
+https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/f091aa59-1244-46cc-9af2-7be4c96c5b39
 
+https://github.com/KVSaiRaja/Azure_ChatBot/assets/84494920/6dbe3aab-7cb5-4dd3-bc88-3e825248523b
 
 
