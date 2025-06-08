@@ -1,5 +1,5 @@
 # Chatbot Support for Website Using Azure AI services 
-*azure-chatbot*
+azure-chatbot
 | &nbsp; | &nbsp; |
 | --- | ----------- |
 | **Objective** | - To create a functioning **chatbot** using **Azure Bot Service** and **Language Service** <br>- To build and deploy web app to Azure from a code repository using **Static Web Apps** Service |
